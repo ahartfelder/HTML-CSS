@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Items</title>
+    <link rel="stylesheet" href="flexbox-items.css">
+</head>
+<body>
+    <h1>Flexbox Items</h1>
+    <div class="flex-container">
+        <div style="align-self: flex-start">1</div>
+        <div style="flex-basis: 200px;">2</div>
+        <div style="align-self: stretch">3</div>
+        <div style="align-self: flex-end">4</div>
+    </div>
+    <h2>Syntaxes:</h2>
+    <ol>
+        <li><b>order: </b><i>number (default: 0)</i></li>
+        <li><b>flex-grow: </b><i>number (default: 0)</i></li>
+        <li><b>flex-shrink: </b><i>number (default: 1)</i></li>
+        <li><b>flex-basis: </b><i>number (unit/percentage)</i> | auto</li>
+        <li><b>flex: </b><small>&lt;flex-grow&gt; &lt;flex-shrink&gt; &lt;flex-basis&gt;</small> | auto (default: 1 1 auto)</li>
+        <li><b>align-self: </b>auto (std) | stretch | center | flex-start | flex-end | baseline</li>
+    </ol>
+</body>
+</html>
