@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+div {
+    background-color: greenyellow;
+    margin-bottom: 15px;
+}
+
+#fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    text-align: center;
+    z-index: 1;
+}
+
+#sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+
+#static {
+    position: static;
+    width: 30%;
+    margin-left: 70%;
+}
+
+#relative {
+    position: relative;
+    margin: 0 50px 0;
+    height: 50px;
+}
+
+#absolute {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: pink;
+}
+
+#box {
+    margin-top: 10px;
+    height: 1000px;
+    background-color: grey;
+}
+
+h1, h2, h3 {
+    background-color: powderblue;
+}

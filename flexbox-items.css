@@ -15,8 +15,8 @@ h1, h2 {
 
 .flex-container > div {
     background-color: #f1f1f1;
-    width: 50px;
     text-align: center;
+    width: 100px;
     padding: 20px;
     margin: 10px;
     border: 2px solid red;

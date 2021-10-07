@@ -1,0 +1,52 @@
+div {
+    border: 2px solid green;
+}
+
+div > div {
+    border-color:orange;
+}
+
+span {
+    border: 2px dashed aquamarine;
+    display: inline;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+#p1 {
+    border: 1px solid black;
+    display: inline;
+    height: 50px;
+    width: 150px;
+}
+
+#p2 {
+    border: 1px solid gray;
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+}
+
+#tr1 { visibility: hidden;}
+#tr2 { visibility: collapse;}
+
+#h2 {
+    border: 2px dotted blue;
+    max-width: 800px;
+}
+
+#p3 {
+    outline: 1px solid red;
+    margin: 20px;
+}
+
+h3 {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border: solid greenyellow;
+    margin: 20px;
+    outline: 10px solid indianred;
+}

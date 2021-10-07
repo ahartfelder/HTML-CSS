@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+<body>
+    <h1>Position</h1>
+    <div id="fixed">Fixed</div>
+    <div id="sticky">Sticky</div>
+    <div id="static">Static</div>
+    <div id="relative">Relative<div id="absolute">Absolute</div></div>
+    
+    <div id="box">
+        <h2>Positioning</h2>
+        <p>Elements are positioned using: <span style="background-color: yellow;"><i>top </i>| <i>bottom </i>| <i>left </i>| <i>right</i></span> properties. They work only when <i style="background-color: yellow;">position</i> property is set and work differently depending on the position value.</p>
+        <h3>Static: (Default)</h3>
+        <p>Elements are not affected by the top, bottom, left, and right properties.</p>
+        <h3>Relative:</h3>
+        <p>Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.</p>
+        <h3>Absolute:</h3>
+        <p>An element is positioned relative to the nearst positioned ancestor. If it has no ancestors, it uses the document body.</p>
+        <p><strong>Note:</strong> Absolute positioned elements are removed from the normal flow, and can overlap elements.</p>
+        <h3>Fixed:</h3>
+        <p>An element is positioned relative to the <strong>viewport</strong>. It stays in the same place even if the page is scrolled.</p>
+        <h3>Sticky</h3>
+        <p>An element is positioned based on the user's scroll position.</p>
+        <p>A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+    </div>
+</body>
+</html>
