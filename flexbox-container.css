@@ -10,7 +10,6 @@ h1, h2 {
     display: flex;
     flex-flow: column-reverse wrap-reverse;
     justify-content: space-between;
-    align-items: ;
     align-content: space-between;
     height: 400px;
 }
