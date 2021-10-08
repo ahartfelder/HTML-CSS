@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2 {
@@ -8,15 +10,28 @@ h1, h2 {
     text-align: center;
 }
 
-p {
+.float {
     overflow: auto;
-    width: 100%;
-    margin-left: 15px;
 }
 
-img {
+p {
+    text-align: justify;
+    margin: 10px;
+}
+
+.pic {
+    width: 15%;
+    height: auto;
+}
+
+.teach {
     float: left;
-    margin-right: 15px;
+    margin-right: 20px;
+}
+
+.food {
+    float: right;
+    margin-left: 20px;
 }
 
 .clearfix {
@@ -29,7 +44,7 @@ img {
     display: table;
 }
 
-div > div {
+.clearfix > div {
     float: left;
     width: 33.33%;
     text-align: center;
@@ -46,25 +61,32 @@ div > div {
     background-color: red;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: chocolate;
+.container {
+    background-color: gray;
 }
 
-li {
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container > div {
+    background-color: green;
+    width: 20%;
+    text-align: center;
+    padding: 25px;
+}
+
+.container > div:hover {
+    color: white;
+    background-color: yellowgreen;
+}
+
+.left {
     float: left;
 }
 
-li a {
-    display: inline-block;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-}
-
-li:hover {
-    background-color: darkgreen;
+.right {
+    float: right;
 }

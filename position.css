@@ -27,8 +27,9 @@ div {
 
 #static {
     position: static;
-    width: 30%;
+    width: 200px;
     margin-left: 70%;
+    text-align: center;
 }
 
 #relative {
@@ -37,12 +38,30 @@ div {
     height: 50px;
 }
 
-#absolute {
+.ab {
+    background-color: pink;
     position: absolute;
+    margin: 0;
+}
+
+.absolute-1 {
     right: 0;
     bottom: 0;
+}
+
+.absolute-2 {
+    bottom: 0;
     margin: 0;
-    background-color: pink;
+}
+
+.absolute-3 {
+    right: 0;
+    top: 0;
+}
+
+.absolute-4 {
+    left: 44%;
+    top: 32%;
 }
 
 #box {

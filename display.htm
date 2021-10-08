@@ -4,46 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display</title>
+    <title>Display Property</title>
     <link rel="stylesheet" href="display.css">
 </head>
 <body>
-    <h1>Display</h1>
-    <div>Hello
-        <div>World! <span>What about this?</span></div>
-        <div>That's nice. <span>And this?</span></div>
-        <span>Again?</span>
+    <h1>Display Property</h1>
+    <h2>Inline</h2>
+    <p id="inline">We are using a block element, but set to <code>display: inline</code>.</p>
+    <h2>Block</h2>
+    <cite>Here we are using a inline element, but set to <code style="font-style: normal;">display: block</code>.</cite>
+    <h2>Inline-Block</h2>
+    <p id="lineblock">Here is a block element. <span id="span">Here is an inline-block element with width and height settings.</span></p>
+    <h2>None (Box not displayed below)</h2>
+    <p style="display: none">Here nothing is displayed.</p>
+    <h2>Visibility: Hidden (Box below, not the content)</h2>
+    <p style="visibility: hidden">You can see the box, not the content.</p>
+    <h1>Box-Model</h1>
+    <div id="box">
+        <p>Content</p>
     </div>
-    <h2 class="hide">Hidden</h2>
-    <p>hidden h2 above.</p>
-    <h2>This one is not hidden</h2>
-    <h3>Inline / Inline-Block</h3>
-    <p id="p1">Inline! This one you cannot adjust height and width.</p>
-    <p id="p2">Inline-Block! This one, you can!</p>
-    <div>
-        <table>
-            <tr><th>Testing</th></tr>
-            <tr id="tr1">
-                <td id="td1">Visible</td>
-                <td id="td2">Hidden</td>
-                <td>No edit</td>
-            </tr>
-        
-            <tr id="tr2">
-                <td>No edit</td>
-                <td id="td3">Collapsed</td>
-                <td>No edit</td>
-            </tr>
-
-            <tr>
-                <td>No edit</td>
-                <td>No edit</td>
-                <td>No edit</td>
-            </tr>
-        </table>
-    </div>
-    <h2 id="h2">Hello World!</h2>
-    <p id="p3">Outline</p>
-    <h3>Box Model</h3>
+    <h3>Index:</h3>
+    <p><span id="content">Content</span> | <span id="padding">Padding</span> | <span id="border">Border</span> | <span class="outline">Outline</span> | <span id="margin">Margin (Margin+<span class="outline">Outline</span>)</span></p>
 </body>
 </html>

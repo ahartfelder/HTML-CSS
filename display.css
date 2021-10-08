@@ -1,52 +1,83 @@
-div {
-    border: 2px solid green;
+* {
+    background-color: lightgrey;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-div > div {
-    border-color:orange;
+h1 {
+    background-color: rgb(0, 209, 0);
+    padding: 20px;
 }
 
-span {
-    border: 2px dashed aquamarine;
+h2, h3 {
+    background-color: grey;
+    padding: 10px;
+}
+
+#inline {
     display: inline;
+    border: solid red;
+    width: 800px;
+    height: 1000px;
 }
 
-.hide {
-    visibility: hidden;
+cite {
+    display: block;
+    border: solid orange;
 }
 
-#p1 {
-    border: 1px solid black;
-    display: inline;
-    height: 50px;
-    width: 150px;
+code {
+    background-color: yellow;
 }
 
-#p2 {
-    border: 1px solid gray;
+#lineblock {
+    border: solid orangered;
+}
+
+#span {
+    border: solid blue;
     display: inline-block;
+    width: 300px;
     height: 50px;
-    width: 150px;
 }
 
-#tr1 { visibility: hidden;}
-#tr2 { visibility: collapse;}
-
-#h2 {
-    border: 2px dotted blue;
-    max-width: 800px;
+#box {
+    background-color: goldenrod;
+    margin: 30px;
+    border: solid orangered;
+    padding: 20px;
+    outline: 10px solid lightseagreen;
+    outline-offset: 10px;
 }
 
-#p3 {
-    outline: 1px solid red;
-    margin: 20px;
-}
-
-h3 {
-    background-color: black;
+#box>p {
     color: white;
-    padding: 15px;
-    border: solid greenyellow;
-    margin: 20px;
-    outline: 10px solid indianred;
+    background-color: midnightblue;
+    text-align: center;
+}
+
+#content {
+    background-color: midnightblue;
+    color: white;
+}
+
+#padding {
+    background-color: goldenrod;
+}
+
+#border {
+    background-color: orangered;
+}
+
+.outline {
+    background-color: lightseagreen;
+}
+
+#margin {
+    background-color: lightgray;
+}
+
+h3~p {
+    background-color: gray;
+    padding: 30px 50px 50px;
 }
