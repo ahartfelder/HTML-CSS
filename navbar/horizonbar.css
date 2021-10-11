@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    overflow: auto;
+    background-color: cyan;
+}
+
+li a {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: darkblue;
+}
+
+li a:hover {
+    background-color: darkcyan;
+    color: rgb(235, 235, 235);
+}
+
+div {
+    text-align: justify;
+    margin: 20px;
+}
+
+p::first-letter {
+    padding-left: 20px;
+}
