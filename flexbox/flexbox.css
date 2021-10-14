@@ -1,25 +1,18 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .container {
     background-color: #cacaca;
     padding: 10px;
-    margin: 50px;
+    margin: 20px;
     height: 300px;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: flex-start;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .item {
     background-color: #ff0037;
     color: #fff;
     padding: 20px;
-    margin: 10px;
     font-size: 50px;
     text-align: center;
 }
