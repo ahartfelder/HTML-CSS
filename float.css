@@ -1,92 +1,69 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2 {
-    background-color: aquamarine;
-    padding: 15px;
-    text-align: center;
-}
-
-.float {
-    overflow: auto;
-}
-
-p {
-    text-align: justify;
-    margin: 10px;
-}
-
-.pic {
-    width: 15%;
-    height: auto;
-}
-
-.teach {
-    float: left;
-    margin-right: 20px;
-}
-
-.food {
-    float: right;
-    margin-left: 20px;
-}
-
-.clearfix {
-    border: 2px solid blue;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.clearfix > div {
-    float: left;
-    width: 33.33%;
-    text-align: center;
-    padding: 25px;
 }
 
 .div1 {
-    background-color: orange;
-}
-.div2 {
-    background-color: lightskyblue;
-}
-.div3 {
-    background-color: red;
+    background-color: aquamarine;
+    overflow: auto;
 }
 
-.container {
-    background-color: gray;
-}
-
-.container::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.container > div {
-    background-color: green;
-    width: 20%;
-    text-align: center;
-    padding: 25px;
-}
-
-.container > div:hover {
-    color: white;
-    background-color: yellowgreen;
-}
-
-.left {
+.div1 img {
     float: left;
 }
 
-.right {
+.div1 p {
+    float: left;
+    width: 50%;
+}
+
+.div2 {
+    background-color: bisque;
+    padding: 5px;
+    overflow: auto;
+}
+
+.div2 div {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding: 30px;
+    opacity: 0.5;
+}
+
+.div2 div:hover {
+    opacity: 1;
+}
+
+.num1 {
+    background-color: red;
+}
+
+.num2 {
+    background-color: green;
+}
+
+.num3 {
+    background-color: blue;
+}
+
+.div3 {
+    overflow: auto;
+    background-color: lightblue;
+    padding: 5px;
+}
+
+.div3 div {
+    padding: 30px;
+    text-align: center;
+    width: 30%;
+}
+
+.num4 {
+    background-color: yellowgreen;
+    float: left;
+}
+
+.num5 {
+    background-color: yellow;
     float: right;
 }

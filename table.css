@@ -1,0 +1,23 @@
+th, td{
+    border: 1px solid;
+    border-radius: 7px;
+    text-align: center;
+}
+
+th {
+    height: 50px;
+    background-color: darkorange;
+}
+
+td {
+    background-color: rgb(255, 195, 175);
+}
+
+tr:hover {
+    background-color: #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: none;
+}

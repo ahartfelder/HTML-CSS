@@ -1,0 +1,78 @@
+body {
+    height: 150vh;
+    background-color: #cacaca;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0;
+}
+
+div {
+    padding: 20px;
+}
+
+#static {
+    background-color: black;
+    color: white;
+}
+
+#fixed {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#relative {
+    background-color: green;
+    color: white;
+    position: relative;
+    height: 550px;
+    text-align: center;
+    text-transform: uppercase;
+    /* visibility: hidden; */
+    overflow: hidden;
+}
+
+#absolute {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+}
+
+#relative2 {
+    background-color: brown;
+    position: relative;
+    height: 150px;
+    margin-top: 10px;
+}
+
+#absolute2 {
+    background-color: rebeccapurple;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+}
+
+#sticky {
+    background-color: orange;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}

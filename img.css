@@ -1,5 +1,11 @@
-* {
-    background-color: slategray;
+
+
+body {
+    background-image: url(imagens/teach-600px.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 p::first-letter {

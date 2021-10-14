@@ -1,0 +1,42 @@
+header img {
+    height: 60px;
+    margin-left: 40px;
+}
+
+body {
+    height: 125vh;
+    background-image: url(/imagens/teach-600px.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
+    padding: 30px;
+}
+
+header {
+    height: 80px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+header * {
+    display: inline;
+}
+
+main {
+    color: rgb(155, 3, 61);
+}
+
+header li {
+    margin: 30px;
+}
+
+header li a {
+    text-decoration: none;
+    color: #005;
+}
