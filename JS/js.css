@@ -1,0 +1,22 @@
+#over {
+    background-color: brown;
+}
+
+#click {
+    background-color: orangered;
+    color: white;
+}
+
+div {
+    float: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 20px 0 0;
+    padding: 15px;
+    width: 120px;
+    text-align: center;
+}
+
+button {
+    display: block;
+}

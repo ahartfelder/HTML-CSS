@@ -5,13 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
+    <link rel="stylesheet" href="js.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <button onclick="myFunction()">Click</button>
+    <script>document.write(Date());</script>
+    <h1 id="demo">Who am I?</h1>
+    <img id="truck" src="/imagens/food-300px.jpg" alt="food">
+    <br>
+    <p id="demo2"></p>
+    <button onclick="myFunction()">Click Me</button>
+    <div id="over" onmouseover="mOver(this)" onmouseout="mOut(this)">Mouse over me</div>
+    <div id="click" onmousedown="mDown(this)" onmouseup="mUp(this)">Click Me</div>
     <script>
         function myFunction() {
-            const document.getElementsByTagName("h1");
+            var y = "I'm Javascript."
+            var x = document.getElementById("demo");
+            x.innerHTML=y;
+            x.style.backgroundColor = "lightblue";
+            x.style.padding = "20px 0";
+            x.style.width = "600px";
+            document.getElementById("truck").src = "/imagens/teach-600px.jpg";
+            document.getElementById("demo2").innerHTML = Date();
+        }
+        function mOver(obj) {
+            obj.innerHTML = "Hello Event!";
+        }
+        function mOut(obj) {
+            obj.innerHTML = "Bye bye";
+        }
+        function mDown(obj) {
+            obj.innerHTML = "Hey, that hurts!";
+            obj.style.backgroundColor = "red";
+            obj.style.color = "black";
+        }
+        function mUp(obj) {
+            obj.innerHTML = "Oh, thank you!";
+            obj.style.backgroundColor = "orangered";
+            obj.style.color = "white";
         }
     </script>
 </body>
