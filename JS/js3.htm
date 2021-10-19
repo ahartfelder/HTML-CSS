@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>JS HTML DOM</h1>
+    <h2>Adding / Removing / Replacing Nodes</h2>
+    <div id="div1">
+        <p id="p1">This is an old paragraph.</p>
+        <p id="p2">This one will be deleted.</p>
+        <p id="p3">This one will be deleted too.</p>
+        <p id="p4">This one will be replaced.</p>
+    </div>
+    <script>
+        const para = document.createElement("p");
+        const node = document.createTextNode("This is a paragraph.");
+        para.appendChild(node);
+        const parent = document.getElementById("div1");
+        parent.appendChild(para);
+        
+        const para2 = document.createElement("p");
+        const node2 = document.createTextNode("This is a new paragraph.");
+        para2.appendChild(node2);
+        const child = document.getElementById("p1");
+        parent.insertBefore(para2, child);    
+
+        const para3 = document.getElementById("p2");
+        para3.remove();
+
+        const para4 = document.getElementById("p3");
+        parent.removeChild(para4);
+
+        const para5 = document.createElement("p");
+        const node5 = document.createTextNode("This one replaces the other.");
+        para5.appendChild(node5);
+        const child2 = document.getElementById("p4");
+        parent.replaceChild(node5, child2);
+
+        const divisor = document.createElement("div");
+        document.body.appendChild(divisor);
+        divisor.id = "div2";
+        
+        const header = document.createElement("h2");
+        const Node = document.createTextNode("This is a header");
+        header.appendChild(Node);
+        divisor.appendChild(header);
+    </script>
+</body>
+</html>

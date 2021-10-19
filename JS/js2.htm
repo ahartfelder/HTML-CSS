@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
+    <title>Javascript HTML DOM</title>
 </head>
 <body>
-    <h1>Event Listener</h1>
-    <button id="demo">Click Me</button>
-<script>
-    var a = document.getElementById("demo").addEventListener("click",myFunction);
+    <h1>DOM Navigation</h1>
+    <p id="p1">First one</p>
+    <p id="p2"></p>
+    <h2 id="head1">Header</h2>
+    <p>Hello!</p>
+    <h2 id="head2"></h2>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <script>
+        const myTitle = document.getElementsByTagName("title");
+        myTitle[0].innerHTML = "Navigation Btw Nodes";
+        document.getElementById("p2").innerHTML = document.getElementById("p1").firstChild.nodeValue;
 
-    function myFunction() {
-        alert("WOHOO!!!");
-    }
-</script>
+        document.getElementById("head2").innerHTML = document.getElementById("head1").childNodes[0].nodeValue;
+
+        document.getElementById("p3").innerHTML = document.getElementById("head1").nodeName;
+
+        document.getElementById("p4").innerHTML = document.getElementById("p1").nodeType;
+
+        document.getElementById("p5").innerHTML = document.getElementById("head1").nextElementSibling.nodeName;
+    </script>
 </body>
 </html>
