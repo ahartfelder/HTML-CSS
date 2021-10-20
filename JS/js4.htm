@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM Collections / Node Lists</h1>
+    <h2>Collections</h2>
+    <p class="p1">1</p>
+    <p class="p2">2</p>
+    <p class="p3">3</p>
+    <p class="p4">4</p>
+    <p class="p5">5</p>
+    <h2>Node Lists</h2>
+    <div class="d1">6</div>
+    <div class="d2">7</div>
+    <div class="d3">8</div>
+    <div class="d4">9</div>
+    <div class="d5">10</div>
+    <script>
+        const myCollection = document.getElementsByTagName("p");
+        for(let x = 0; x < myCollection.length; x++)
+            myCollection[x].style.backgroundColor = "lightgreen";
+        
+            myCollection[2].innerHTML = "Hello";
+
+        const myNodelist = document.querySelectorAll("div");
+        for(let y = 0; y < myNodelist.length; y++) {
+            myNodelist[y].style.fontWeight = "bold";
+            myNodelist[y].style.textAlign = "center";
+        }
+               
+    </script>
+</body>
+</html>

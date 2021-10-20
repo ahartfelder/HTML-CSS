@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header, footer {
+  background-color: #477;
+  text-align: center;
+}
+
+header {
+  box-shadow: 0 2px 5px;
+  z-index: 1;
+}
+header h1 {
+  margin: 0;
+  padding-top: 10px;
+}
+header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+header nav {
+  position: sticky;
+  top: 0;
+}
+header li a {
+  width: 20%;
+  float: left;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+header a:hover {
+  background-color: #466;
+}
+
+section {
+  position: sticky;
+  top: 38px;
+  background-color: #bbb;
+  width: 20%;
+  text-align: center;
+  overflow-y: scroll;
+}
+section a {
+  display: block;
+  padding: 10px;
+}
+section a:hover {
+  background-color: #aaa;
+}
+
+footer {
+  padding: 10px 0;
+}
+
+/*# sourceMappingURL=test.css.map */
