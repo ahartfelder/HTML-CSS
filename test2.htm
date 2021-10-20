@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {box-sizing: border-box;}
+      body {
+        height: 100vh;
+        margin: 0;
+      }
+      nav {overflow: auto;border-top: 1px solid #bbb;}
+      #d1 h1 {margin: 0;padding: 5px;text-align: center;}
+      .h {
+        width: 16.66%;
+        float: left;
+        text-align: center;
+      }
+      .h a {
+        text-decoration: none;
+        display: block;
+        padding: 5px;
+      }
+      .h a:hover {
+        background-color: #999;
+      }
+      #d1 {
+        background-color: #ccc;
+        min-height: 15%;
+        overflow: hidden;
+        box-shadow: 0 5px black;
+      }
+      #d2 {
+        background-color: #aaa;
+        height: max-content;
+      }
+      #d2::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      #d3 {
+        background-color: #888;
+        height: 15%;
+        text-align: center;
+        padding: 20px;
+      }
+      .c {
+        float:left;
+        text-align: center;
+        height: 100%;
+      }
+      .c2 p, .c3 p{
+        text-align: justify;
+        padding: 10px;
+      }
+      .c1 {
+        background-color: #399;
+        width: 20%;
+        padding: 0;
+        overflow-y: auto;
+      }
+      .c2 {
+        background-color: #377;
+        width: 40%;
+      }
+      .c3 {
+        background-color: #455;
+        width: 40%;
+      }
+      .b a {
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        padding: 10px 0;
+      }
+      .b a:hover {background-color: #39c;}
+    </style>
+</head>
+<body>       
+    <div id="d1">
+      <h1>MyWebsite</h1>
+      <nav>
+        <div class="h"><a href="#">Item 1</a></div>
+        <div class="h"><a href="#">Item 2</a></div>
+        <div class="h"><a href="#">Item 3</a></div>
+        <div class="h"><a href="#">Item 4</a></div>
+        <div class="h"><a href="#">Item 5</a></div>
+        <div class="h"><a href="#">Item 6</a></div>
+      </nav>
+    </div>
+    <div id="d2">
+      <div class="c1 c">
+        <h2>Side Bar</h2>
+        <div class="b1 b"><a href="#">Menu 1</a></div>
+        <div class="b2 b"><a href="#">Menu 2</a></div>
+        <div class="b3 b"><a href="#">Menu 3</a></div>
+        <div class="b4 b"><a href="#">Menu 4</a></div>
+        <div class="b5 b"><a href="#">Menu 5</a></div>
+        <div class="b6 b"><a href="#">Menu 6</a></div>
+        <div class="b7 b"><a href="#">Menu 7</a></div>
+        <div class="b8 b"><a href="#">Menu 8</a></div>
+        <div class="b9 b"><a href="#">Menu 9</a></div>
+        <div class="b10 b"><a href="#">Menu 10</a></div>
+      </div>
+      <div class="c2 c">
+        <h2>Center Box</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit molestias id saepe eum error praesentium ullam rerum doloribus velit? Vel laborum ducimus totam debitis nobis aut quos rerum ratione sequi consectetur suscipit, aliquid asperiores expedita voluptate nulla unde temporibus pariatur necessitatibus quae harum quis eos quod quam. Dignissimos, et cum ipsam adipisci sit voluptatibus consectetur eum magni sunt debitis nobis totam dolorum minus voluptatem, dolor aliquid vero aliquam error itaque ullam. Consequatur maiores exercitationem libero, aliquid iure quisquam esse fuga repellat sit accusamus repudiandae, ullam magni possimus hic mollitia, laudantium quo totam quam! Iusto natus reiciendis velit, dolores amet enim!</p>
+      </div>
+      <div class="c3 c">
+        <h2>Right Box</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio ducimus recusandae inventore officiis nemo, harum animi nesciunt nostrum tempore sapiente iste iure, pariatur, aliquam commodi assumenda rerum eligendi. Maxime ex, excepturi soluta amet ipsa ipsam dolorum quam laboriosam aperiam repellat maiores veritatis magnam unde laudantium enim sapiente quisquam esse saepe repellendus, perferendis possimus tempora. Ipsam quam quae voluptas nesciunt beatae aperiam autem, minus, quaerat totam ut, eius quasi impedit? Voluptatibus nulla obcaecati, est a aperiam ullam ipsam cupiditate ipsa tempore eaque dolore error repellat cumque unde doloremque quisquam, molestias dolorem consequatur perferendis praesentium rerum! Placeat quos ea sit voluptates! Illo.</p>
+      </div>
+    </div>
+    <div id="d3">
+      <div>&copy; Copyright by <i>FOOTER</i>&reg;</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {box-sizing: border-box;text-align: center;}
+        body {margin: 0;height: 1000px;}
+        header {background-color: #ccc;position:relative;z-index: 5;}
+        h1 {margin: 0;padding: 10px;}
+        nav {
+            background-color: #ccc;
+            box-shadow: 0 1px 3px #888;
+            position: sticky;
+            top: 0;
+            z-index: 3;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+        }
+        li {
+            width: 20%;
+            float: left;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 15px;
+        }
+        a:hover {background-color: #aaa;}
+        aside {
+            width: 15%;
+            background-color: #999;
+            position: sticky !important;
+            top: 48px;
+            height: 300px;
+            overflow: auto;
+            z-index: 2;
+        }
+        .items>a {
+            padding: 5px;
+        }
+        article {
+            width: 85%;
+            margin-left: 15%;
+            padding: 20px;
+            float: left;
+        }
+        article::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        footer {
+            background-color: #ccc;
+            position: sticky;
+            top: 348px;
+            padding: 40px;
+            box-shadow: 0 -1px 3px #888;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>This is the title of the website</h1>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+                <li><a href="#">Menu 4</a></li>
+                <li><a href="#">Menu 5</a></li>
+            </ul>
+        </nav>
+    <aside>
+        <div class="items"><a href="#">1</a></div>
+        <div class="items"><a href="#">2</a></div>
+        <div class="items"><a href="#">3</a></div>
+        <div class="items"><a href="#">4</a></div>
+        <div class="items"><a href="#">5</a></div>
+        <div class="items"><a href="#">6</a></div>
+        <div class="items"><a href="#">7</a></div>
+        <div class="items"><a href="#">8</a></div>
+        <div class="items"><a href="#">9</a></div>
+        <div class="items"><a href="#">10</a></div>
+        <div class="items"><a href="#">11</a></div>
+        <div class="items"><a href="#">12</a></div>
+        <div class="items"><a href="#">13</a></div>
+        <div class="items"><a href="#">14</a></div>
+        <div class="items"><a href="#">15</a></div>
+        <div class="items"><a href="#">16</a></div>
+        <div class="items"><a href="#">17</a></div>
+        <div class="items"><a href="#">18</a></div>
+        <div class="items"><a href="#">19</a></div>
+        <div class="items"><a href="#">20</a></div>
+    </aside>
+    <article>
+        <h2>My sample website</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, ipsum odio? Enim consequatur eveniet sapiente modi repellendus optio temporibus repellat error, qui autem voluptatibus sunt quos quod magnam provident, vero ab voluptates mollitia porro perferendis ullam nobis! Nam est inventore quod corrupti rem. Blanditiis placeat accusantium quam explicabo nam dolor aliquid similique. Sapiente natus dolor quod aspernatur rem, veritatis blanditiis nesciunt neque debitis facilis temporibus aliquam voluptates, modi ratione pariatur reprehenderit? Hic quos non reiciendis autem cupiditate dolores nisi nostrum repellat eos voluptates consectetur sit voluptatem et magni odit a soluta reprehenderit nulla, expedita ex corporis, assumenda beatae id. Dolor.</p>
+        <h2>My sample website</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, ipsum odio? Enim consequatur eveniet sapiente modi repellendus optio temporibus repellat error, qui autem voluptatibus sunt quos quod magnam provident, vero ab voluptates mollitia porro perferendis ullam nobis! Nam est inventore quod corrupti rem. Blanditiis placeat accusantium quam explicabo nam dolor aliquid similique. Sapiente natus dolor quod aspernatur rem, veritatis blanditiis nesciunt neque debitis facilis temporibus aliquam voluptates, modi ratione pariatur reprehenderit? Hic quos non reiciendis autem cupiditate dolores nisi nostrum repellat eos voluptates consectetur sit voluptatem et magni odit a soluta reprehenderit nulla, expedita ex corporis, assumenda beatae id. Dolor.</p>
+        
+    </article>
+    <footer>
+        <div>&copy; Copyrights by @ahartfelder</div>
+    </footer>
+</body>
+</html>
