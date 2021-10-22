@@ -6,10 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {box-sizing: border-box;text-align: center;}
-        body {margin: 0;height: 1000px;}
-        header {background-color: #ccc;position:relative;z-index: 5;}
-        h1 {margin: 0;padding: 10px;}
+        * {
+            box-sizing: border-box;
+            text-align: center;
+        }
+        body {
+            margin: 0;
+            height: 1000px;
+        }
+        header {
+            background-color: #ccc;
+            position:relative;
+            z-index: 5;
+        }
+        h1 {
+            margin: 0;
+            padding: 10px;
+        }
         nav {
             background-color: #ccc;
             box-shadow: 0 1px 3px #888;
@@ -36,33 +49,25 @@
         aside {
             width: 15%;
             background-color: #999;
-            position: sticky !important;
+            position: sticky;
             top: 48px;
             height: 300px;
             overflow: auto;
             z-index: 2;
         }
         .items>a {
-            padding: 5px;
+            padding: 10px 0;
         }
         article {
             width: 85%;
             margin-left: 15%;
             padding: 20px;
-            float: left;
         }
-        article::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
+
         footer {
             background-color: #ccc;
-            position: sticky;
-            top: 348px;
             padding: 40px;
             box-shadow: 0 -1px 3px #888;
-            z-index: 3;
         }
     </style>
 </head>
