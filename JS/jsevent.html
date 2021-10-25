@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style>
+        #demo span {
+            background-color: yellow;
+        }
+        .container {
+            background-color: green;
+            width: fit-content;
+            padding: 15px 15px;
+        }
+        </style>
+</head>
+<body>
+    <h1>JS Events</h1>
+    <p id="demo">What happens when you <span onclick="change();">Click Here?</span></p>
+    <div id="over" onmouseover="mOver();" onmouseout="mOut();" onmousedown="mDown();" onmouseup="mUp();">Mouse Over Here / Click Me</div>
+    <h2>Event Listener</h2>
+    <div class="container">Double Click Me</div>
+    <p id="text">Hello</p>
+    <button id="js" onclick="func()">Click Me</button>
+    <script src="jsevent.js"></script>
+</body>
+</html>
