@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header {
+    background-color: aqua;
+}
+
+h1 {
+    padding: 10px 0;
+}
+
+.nav-cont {
+    box-shadow: 0 2px 3px #ccc;
+    background-color: turquoise;
+    list-style: none;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.navs {
+    width: fit-content;
+    float: left;
+    width: 20%;
+    position: relative;
+}
+
+.navs a {
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: rgb(0, 182, 182);
+}
+
+.vertical-menu {
+    position: absolute;
+    top: 38px;
+}
+
+main {
+    height: 170vh;
+}
+
+footer {
+    background-color: lightsalmon;
+    height: 20vh;
+}
