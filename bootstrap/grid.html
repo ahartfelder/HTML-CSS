@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Classes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .row {
+            background-color: aqua;
+        }
+        .color>.back:nth-child(odd) {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Classes</h1>
+    <div class="row mb-3">
+        <div class="col" style="background-color: red;">1</div>
+        <div class="col" style="background-color: green;">2</div>
+        <div class="col" style="background-color: orange;">3</div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-2" style="background-color: red;">Col-2</div>
+        <div class="col-4" style="background-color: green;">Col-4</div>
+        <div class="col-6" style="background-color: orange;">Col-6</div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-sm" style="background-color: red;">Small (width &GreaterEqual; 576px)</div>
+        <div class="col-md" style="background-color: green;">Medium (width &GreaterEqual; 768px)</div>
+        <div class="col-lg" style="background-color: orange;">Large (width &GreaterEqual; 992px</div>
+        <div class="col-xl" style="background-color: lightblue;">Extra Large (width &GreaterEqual; 1200px</div>
+    </div>
+    <div class="row color mb-3">
+        <div class="col-1 back">1</div>
+        <div class="col-1 back">2</div>
+        <div class="col-1 back">3</div>
+        <div class="col-1 back">4</div>
+        <div class="col-1 back">5</div>
+        <div class="col-1 back">6</div>
+        <div class="col-1 back">7</div>
+        <div class="col-1 back">8</div>
+        <div class="col-1 back">9</div>
+        <div class="col-1 back">10</div>
+        <div class="col-1 back">11</div>
+        <div class="col-1 back">12</div>
+    </div>
+    <div class="row color mb-3">
+        <div class="col-2 back">1</div>
+        <div class="col-2 back">2</div>
+        <div class="col-2 back">3</div>
+        <div class="col-2 back">4</div>
+        <div class="col-2 back">5</div>
+        <div class="col-2 back">6</div>
+    </div>
+    <div class="row color mb-3">
+        <div class="col-2 back">1</div>
+        <div class="col-2 back">2</div>
+        <div class="col-3 back">3</div>
+        <div class="col-5 back">4</div>
+    </div>
+</body>
+</html>
