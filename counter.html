@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body {
+            counter-reset: header subsection;
+        }
+        h2::before {
+            counter-increment: header;
+            content: "Section " counter(header) ". ";
+        }
+        h3::before {
+            counter-increment: subsection;
+            content: counter(header) "." counter(subsection) " ";
+        }
+        ol {
+            counter-reset: section;
+            list-style-type: none;
+        }
+        li::before {
+            counter-increment: section;
+            content: counters(section,".") " ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <h2>Web Development</h2>
+    <h3>HTML</h3>
+    <h3>CSS</h3>
+    <h3>JS</h3>
+    <h2>Framework</h2>
+    <h3>React</h3>
+    <h3>Angular</h3>
+    <h3>Vue.js</h3>
+    <h1>Counter for Ordered List</h1>
+    <ol>
+        <li>A</li>
+        <li>B
+        <ol>
+            <li>E</li>
+            <li>F
+            <ol>
+                <li>H</li>
+                <li>I</li>
+            </ol>
+            </li>
+            <li>G</li>
+        </ol>
+        </li>
+        <li>C</li>
+        <li>D</li>
+    </ol>
+</body>
+</html>
