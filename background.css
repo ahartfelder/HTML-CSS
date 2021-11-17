@@ -1,0 +1,107 @@
+.color {
+    background-color: rgba(50,150,50,1);
+}
+.transparency {
+    background-color: rgba(50,150,50,0.5);
+}
+
+.opacity {
+    background-color: rgb(50,150,50);
+    opacity: 50%;
+}
+
+.back-img {
+    background: sandybrown url(imagens/texture-450-300.jpg) no-repeat fixed center right;
+    height: 50px;
+}
+
+.rpt {
+    border: 1px solid black;
+    background-image: url(imagens/teach-239x50.jpg);
+    height: 100px;
+}
+
+.no-repeat {
+    background-repeat: no-repeat;
+}
+
+.repeat-x {
+    background-repeat: repeat-x;
+}
+
+.repeat-y {
+    background-repeat: repeat-y;
+}
+
+.space {
+    background-repeat: space;
+}
+.round {
+    background-repeat: round;
+}
+
+.pos {
+    background-image: url(imagens/teach-239x50.jpg);
+    background-repeat: no-repeat;
+    height: 100px;
+    border: 2px solid;
+    margin-bottom: 10px;
+   }
+   
+.pos1 {
+    background-position: 25% 25%;   
+}
+
+.pos2 {
+    background-position: right bottom;
+}
+
+.pos3 {
+    background-position: 150px 20px;
+}
+
+.local {
+     background-image: url(imagens/texture-450-300.jpg);
+     background-attachment: local;
+     overflow-y: scroll;
+     height: 50px;
+     border: 2px solid;
+     margin-bottom: 10px;
+ }
+
+.fixed {
+     background-image: url(imagens/texture-450-300.jpg);
+     background-attachment: fixed;
+     height: 50px;
+     border: 2px solid;
+     overflow-y: scroll;
+     margin-bottom: 10px;
+ }
+ 
+.scroll {
+     background-image: url(imagens/texture-450-300.jpg);
+     background-attachment: scroll;
+     height: 50px;
+     border: 2px solid;
+     overflow-y: scroll;
+ }
+
+.box > h3 {
+    margin: 0;
+}
+
+.box {
+    background-color: tomato;
+    border: 5px dotted;
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+
+.padding {
+    background-clip: padding-box;
+}
+
+.content {
+    background-clip: content-box;
+}
+ 
