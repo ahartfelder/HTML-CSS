@@ -4,65 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background</title>
+    <title>Home</title>
     <link rel="stylesheet" href="background.css">
 </head>
 <body>
-    <h1>Background</h1>
-    <h2>Background Color:</h2>
-    <p>Transparent</p>
-    <p class="color">Color: 100%</p>
-    <p class="transparency">Transparency: 50%</p>
-    <p class="opacity">Opacity: 50%</p>
-    <h2>Background Image:</h2>
-    <div class="back-img">
-        <h3>Shorthand: <i>color | image | repeat | attachment | position</i></h3>
+    <h1>Background</h1><hr>
+    <h2>Background-Color</h2>
+    <div class="container">
+        <p class="color transparent">Transparent (std)</p>
+        <p class="color">Color: 100%</p>
+        <h3>Transparency x Opacity</h3>
+        <p class="color transparency">Transparency (RGBA): 75%</p>
+        <p class="color opacity">Opacity: 75%</p>
+    </div>
+    <h2>Background-Image</h2>
+    <div class="container">
+        <h3>None</h3>
+        <div class="image image-1"></div>
+        <h3>URL()</h3>
+        <div class="image"></div>
+    </div>
+    <h2>Background-Position</h2>
+    <div class="container">
+        <h3><i>Directions: (Left | Center | Right) (Top | Center | Bottom)</i></h3>
+        <div class="pos pos-1"></div>
+        <h3><i>Percentage: (x% y%)</i> </h3>
+        <div class="pos pos-2"></div>
+        <h3><i>Units (xpos ypos)</i></h3>
+        <div class="pos pos-3"></div>
+    </div>
+    <h2>Background-Size</h2>
+    <div class="container">
+        <h3>Auto</h3>
+        <div class="pos"></div>
+        <h3><i>Units (xpos ypos) or Percentage (x% y%): ("width" "height")</i></h3>
+        <div class="pos size-1"></div>
+        <h3>Contain</h3>
+        <div class="pos size-2"></div>
+        <h3>Cover</h3>
+        <div class="pos size-3"></div>
     </div>
     <h2>Background-Repeat</h2>
-    <h3>Repeat</h3>
-    <div class="repeat rpt"></div>
-    <h3>No-Repeat</h3>
-    <div class="no-repeat rpt"></div>
-    <h3>Repeat-X</h3>
-    <div class="repeat-x rpt"></div>
-    <h3>Repeat-Y</h3>
-    <div class="repeat-y rpt"></div>
-    <h3>Space</h3>
-    <div class="space rpt"></div>
-    <h3>Round</h3>
-    <div class="round rpt"></div>
-    <h2>Background-Position</h2>
-    <div class="pos1 pos">
-        <h3>25% 25%</h3>
+    <div class="container">
+        <h3>Repeat</h3>
+        <div class="pos rpt"></div>
+        <h3>No-Repeat</h3>
+        <div class="pos rpt rpt-1"></div>
+        <h3>Repeat-X</h3>
+        <div class="pos rpt rpt-2"></div>
+        <h3>Repeat-Y</h3>
+        <div class="pos rpt rpt-3"></div>
+        <h3>Round</h3>
+        <div class="pos rpt rpt-4"></div>
+        <h3>Space</h3>
+        <div class="pos rpt rpt-5"></div>
     </div>
-    <div class="pos2 pos">
-        <h3>Right Bottom</h3>
-    </div>
-    <div class="pos3 pos">
-        <h3>150px 20px</h3>
-    </div>
-    <h2>Background-Attachment</h2>
-    <div class="local">
-        <h3>Local</h3>
-        <p>Testing local scrolling</p>
-    </div>
-    <div class="fixed">
-        <h3>Fixed</h3>
-        <p>Testing fixed</p>
-    </div>
-    <div class="scroll">
-        <h3>Scroll</h3>
-        <p>Testing page scroll</p>
+    <h2>Background-Origin (for Background-Image only)</h2>
+    <div class="container">
+        <h3>Padding-Box</h3>
+        <div class="origin"></div>
+        <h3>Border-Box</h3>
+        <div class="origin origin-1"></div>
+        <h3>Content-Box</h3>
+        <div class="origin origin-2"></div>
+        <p><b><mark>Note:</mark></b> No effect if background-attachment is "fixed".</p>
     </div>
     <h2>Background-Clip</h2>
-    <div class="border box">
+    <div class="container">
         <h3>Border-Box</h3>
-    </div>
-    <div class="padding box">
+        <div class="origin clip-1"></div>
         <h3>Padding-Box</h3>
-    </div>
-    <div class="content box">
+        <div class="origin clip-2"></div>
         <h3>Content-Box</h3>
+        <div class="origin clip-3"></div>
     </div>
+    <h2>Background-Attachment</h2>
+    <div class="container">
+        <h3>Scroll</h3>
+        <div class="image"></div>
+        <h3>Local</h3>
+        <div class="image local"></div>
+        <h3>Fixed</h3>
+        <div class="image fixed"></div>
+    </div>
+    <h2>Background Shorthand</h2>
+    <div class="container short">
+        <h3>Background: <i>color | image | position/size | repeat | origin | clip | attachment</i></h3>
+    </div>
+    <p><mark>Note:</mark> If using multiple background-image sources but also want a background-color, the background-color parameter needs to be last in the list.</p>
 </body>
 </html>

@@ -1,107 +1,130 @@
-.color {
-    background-color: rgba(50,150,50,1);
+* {
+    box-sizing: border-box;
 }
+
+body {
+    max-width: 1000px;
+    margin: auto;
+}
+.container {
+    border: 5px dotted #555;
+    padding: 0 10px;
+}
+
+.color {
+    background-color: rgb(30, 150, 30);
+}
+
+.transparent {
+    background-color: transparent;
+}
+
 .transparency {
-    background-color: rgba(50,150,50,0.5);
+    background-color: rgba(30, 150, 30, 0.75);
 }
 
 .opacity {
-    background-color: rgb(50,150,50);
-    opacity: 50%;
+    opacity: 75%;
 }
 
-.back-img {
-    background: sandybrown url(imagens/texture-450-300.jpg) no-repeat fixed center right;
-    height: 50px;
-}
-
-.rpt {
-    border: 1px solid black;
-    background-image: url(imagens/teach-239x50.jpg);
+.image {
+    background-image: url(/imagens/madeira-1349x671.jpg);
+    border: 3px solid #333;
     height: 100px;
+    margin: 5px 0;
 }
 
-.no-repeat {
-    background-repeat: no-repeat;
-}
-
-.repeat-x {
-    background-repeat: repeat-x;
-}
-
-.repeat-y {
-    background-repeat: repeat-y;
-}
-
-.space {
-    background-repeat: space;
-}
-.round {
-    background-repeat: round;
+.image-1 {
+    background-image: none;
 }
 
 .pos {
-    background-image: url(imagens/teach-239x50.jpg);
+    background-image: url(/imagens/teach-239x50.jpg);
     background-repeat: no-repeat;
+    border: 3px solid #333;
     height: 100px;
-    border: 2px solid;
-    margin-bottom: 10px;
-   }
-   
-.pos1 {
-    background-position: 25% 25%;   
+    margin: 5px 0;
 }
 
-.pos2 {
+.pos-1 {
     background-position: right bottom;
 }
 
-.pos3 {
-    background-position: 150px 20px;
+.pos-2 {
+    background-position: 50% 50%;
 }
 
-.local {
-     background-image: url(imagens/texture-450-300.jpg);
-     background-attachment: local;
-     overflow-y: scroll;
-     height: 50px;
-     border: 2px solid;
-     margin-bottom: 10px;
- }
-
-.fixed {
-     background-image: url(imagens/texture-450-300.jpg);
-     background-attachment: fixed;
-     height: 50px;
-     border: 2px solid;
-     overflow-y: scroll;
-     margin-bottom: 10px;
- }
- 
-.scroll {
-     background-image: url(imagens/texture-450-300.jpg);
-     background-attachment: scroll;
-     height: 50px;
-     border: 2px solid;
-     overflow-y: scroll;
- }
-
-.box > h3 {
-    margin: 0;
+.pos-3 {
+    background-position: 50px 25px;
 }
 
-.box {
-    background-color: tomato;
-    border: 5px dotted;
-    padding: 20px 0;
-    margin-bottom: 10px;
+.size-1 {
+    background-size: 90% 75%;
 }
 
-.padding {
+.size-2 {
+    background-size: contain;
+}
+
+.size-3 {
+    background-size: cover;
+}
+
+.rpt {
+    background-repeat: repeat;
+}
+
+.rpt-1 {
+    background-repeat: no-repeat;
+}
+
+.rpt-2 {
+    background-repeat: repeat-x;
+}
+
+.rpt-3 {
+    background-repeat: repeat-y;
+}
+
+.rpt-4 {
+    background-repeat: round;
+}
+
+.rpt-5 {
+    background-repeat: space;
+}
+
+.origin {
+    background-image: url(/imagens/madeira-1349x671.jpg);
+    background-repeat: no-repeat;
+    border: 5px dotted #999;
+    padding: 10px;
+    margin: 5px 0;
+    height: 100px;
+}
+
+.origin-1 {
+    background-origin: border-box;
+}
+
+.origin-2 {
+    background-origin: content-box;
+}
+
+.clip-1 {
+    background-origin: border-box;
+}
+
+.clip-2 {
     background-clip: padding-box;
 }
 
-.content {
+.clip-3 {
     background-clip: content-box;
 }
- 
+
+.short {
+    border: 15px dotted #555;
+    background: yellow url(/imagens/teach-239x50.jpg) bottom no-repeat border-box padding-box;
+    height: 120px;
+}
