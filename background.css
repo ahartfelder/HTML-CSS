@@ -123,6 +123,27 @@ body {
     background-clip: content-box;
 }
 
+.attach {
+    background-image: url(/imagens/madeira-1349x671.jpg);
+    background-repeat: repeat-y;
+    border: 3px solid #333;
+    margin: 5px 0;
+    height: 100px;
+    overflow-y: scroll;
+}
+
+.attach-1 {
+    background-attachment: scroll;
+}
+
+.attach-2 {
+    background-attachment: local;
+}
+
+.attach-3 {
+    background-attachment: fixed;
+}
+
 .short {
     border: 15px dotted #555;
     background: yellow url(/imagens/teach-239x50.jpg) bottom no-repeat border-box padding-box;
