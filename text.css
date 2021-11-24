@@ -1,0 +1,174 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    background-color: lightgray;
+    border-style: solid;
+    border-width: thin;
+    border-color: initial;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: blue;
+    background-color: chartreuse;
+    text-align: center;
+}
+
+h3 {
+    border-style: solid;
+    border-width: thin 0;
+    padding-left: 5px;
+}
+
+.align-r {
+    text-align: right;
+}
+
+.align-c {
+    text-align: center;
+}
+
+.align-j {
+    text-align: justify;
+}
+
+p[class|="last"] {
+    text-align: justify;
+}
+
+.last-l {
+    text-align-last: left;
+}
+
+.last-r {
+    text-align-last: right;
+}
+
+.last-c {
+    text-align-last: center;
+}
+
+.last-j {
+    text-align-last: justify;
+}
+
+.last-s {
+    direction: rtl;
+    text-align-last: start;
+}
+
+.last-e {
+    text-align-last: end;
+}
+
+.dir-rtl {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.vert-sub {
+    vertical-align: sub;
+}
+
+.vert-super {
+    vertical-align: super;
+}
+
+.vert-top {
+    vertical-align: top;
+}
+.vert-txt-top {
+    vertical-align: text-top;
+}
+.vert-mid {
+    vertical-align: middle;
+}
+.vert-bot {
+    vertical-align: bottom;
+}
+.vert-txt-bot {
+    vertical-align: text-bottom;
+}
+.vert-unit {
+    vertical-align: 10px;
+}
+
+.over {
+    text-decoration: overline;
+}
+
+.under {
+    text-decoration: underline;
+}
+
+.through {
+    text-decoration: line-through;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+.capita {
+    text-transform: capitalize;
+}
+
+.indent {
+    text-indent: 50px;
+}
+
+.space1 {
+    letter-spacing: -1px;
+}
+
+.space2 {
+    letter-spacing: 1px;
+}
+
+.height1 {
+    line-height: 25px;
+}
+
+.height2 {
+    line-height: 12px;
+}
+
+.word1 {
+    word-spacing: 20px;
+}
+
+.word2 {
+    word-spacing: -5px;
+}
+
+.w-no {
+    white-space: nowrap;
+}
+
+.w-pre {
+    white-space: pre;
+}
+
+.w-preline {
+    white-space: pre-line;
+}
+
+.w-prewrap {
+    white-space: pre-wrap;
+}
+
+.shadow1 {
+    text-shadow: 3px 3px 2px #555;
+}
+
+.shadow2 {
+    text-shadow: 3px -7px 2px #333, 5px 10px 2px red, 10px 0 2px blue;
+}

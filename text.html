@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatting</title>
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+    <h1>Text Formatting</h1>
+    <div class="container">
+        <h2>Text-Align</h2>
+        <h3>Left <small>(std, if direction: ltr)</small></h3>
+        <p>This text is aligned to the left.</p>
+        <h3>Right <small>(std, if direction: rtl)</small> </h3>
+        <p class="align-r">This text is aligned to the right.</p>
+        <h3>Center</h3>
+        <p class="align-c">This text is centered.</p>
+        <h3>Justify</h3>
+        <p class="align-j"><strong>This text is justified.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, reiciendis. Delectus, neque. Officia, quidem tenetur. Facilis accusamus similique voluptatem debitis harum esse! This text is justified.</p>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Text-Align-Last</h2>
+        <h3>Auto</h3>
+        <p>The last line is justified and aligned left.</p>
+        <h3>Left</h3>
+        <p class="last-l">This is aligned to the left.</p>
+        <h3>Right</h3>
+        <p class="last-r">This is aligned to the right.</p>
+        <h3>Center</h3>
+        <p class="last-c">This is center-aligned.</p>
+        <h3>Justify</h3>
+        <p class="last-j">This is justified as the rest of the lines.</p>
+        <h3>Start (direction: rtl is set)</h3>
+        <p class="last-s">At the beggining of the line (depends on text-direction [ltr|rtl]).</p>
+        <h3>End</h3>
+        <p class="last-e">At the end of the last line (depends on text-direction [ltr|rtl]).</p>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Text-Justify</h2>
+        <p>(Experimental Mode - Study Later)</p>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Direction</h2>
+        <p><b>Tip:</b> Use this with unicode-bidi.</p>
+        <h3>ltr (std)</h3>
+        <p>This is left-to-right.</p>
+        <h3>rtl <small>(with unicode-bidi: bidi-overhide)</small></h3>
+        <p class="dir-rtl">This is right-to-left.</p>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Vertical-Align</h2>
+        <h3>Baseline</h3>
+        <p>This is <span>baseline</span>.</p>
+        <h3>Sub</h3>
+        <p>This is <span class="vert-sub">sub</span>.</p>
+        <h3>Super</h3>
+        <p>This is <span class="vert-super">super</span>.</p>
+        <h3>Top</h3>
+        <p>This is <span class="vert-top">top</span>.</p>
+        <h3>Text-Top</h3>
+        <p>This is <span class="vert-txt-top">text-top</span>.</p>
+        <h3>Middle</h3>
+        <p>This is <span class="vert-mid">middle</span>.</p>
+        <h3>Bottom</h3>
+        <p>This is <span class="vert-bot">bottom</span>.</p>
+        <h3>Text-Bottom</h3>
+        <p>This is <span class="vert-txt-bot">text-bottom</span>.</p>
+        <h3>Length or Percentage</h3>
+        <p>This is <span class="vert-unit">unit</span>.</p>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Text-Decoration - More Info to Insert</h2>
+        <h3>None (std)</h3>
+        <p>This is none.</p>
+        <h3>Overline</h3>
+        <p class="over">This is overline.</p>
+        <h3>Underline</h3>
+        <p class="under">This is underline.</p>
+        <h3>Line-Through</h3>
+        <p class="through">This is line-through.</p>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Text-Transform</h2>
+        <h3>None (std)</h3>
+        <p>This is none.</p>
+        <h3>Uppercase</h3>
+        <p class="upper">This is uppercase.</p>
+        <h3>Lowercase</h3>
+        <p class="lower">This is LOWERCASE.</p>
+        <h3>Capitalize</h3>
+        <p class="capita">This is capitalize.</p>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Text-Indent</h2>
+        <h3>Length or Percentage (std = 0)</h3>
+        <p class="indent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ex! Eius, ab ipsa. Animi consequatur sed voluptates omnis laudantium amet.</p>
+        <p class="indent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, cumque quae voluptatem est ipsa optio unde in mollitia accusantium nesciunt?</p>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Letter-Spacing</h2>
+        <h3>Normal (std)</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, a!</p>
+        <h3>Length</h3>
+        <p class="space1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p class="space2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, laudantium?</p>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Line-Height</h2>
+        <p><b>Note:</b> Negative numbers <strong>NOT</strong> allowed.</p>
+        <h3>Normal (std)</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus harum reiciendis aspernatur cupiditate reprehenderit corrupti odio accusantium voluptates pariatur cumque, cum velit animi commodi nulla rem. Magnam maxime nisi maiores.</p>
+        <h3>Number <small>(multiplied by font-size)</small></h3>
+        <p class="height1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sit veniam nam ea voluptatum laborum culpa tempore blanditiis sed molestiae, quo soluta necessitatibus hic eligendi fugiat sint optio odio? Ab!</p>
+        <h3>Length or Percentage</h3>
+        <p class="height2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore tempore dignissimos quia. Consequuntur voluptate labore atque molestias blanditiis, ratione, quos explicabo iure omnis corporis beatae necessitatibus cupiditate, accusamus perferendis alias!</p>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Word-Spacing</h2>
+        <h3>Normal <small>(std = 0.25em)</small></h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, deserunt?</p>
+        <h3>Length</h3>
+        <p class="word1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ut?</p>
+        <p class="word2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, velit?</p>
+    </div>
+    <br>
+    <div class="container">
+        <h2>White-Space</h2>
+        <h3>Normal (std)</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quas a recusandae pariatur, debitis quasi veritatis illum libero consectetur, omnis delectus officia animi tenetur repellat unde..</p>
+        <h3>Nowrap</h3>
+        <p class="w-no">Sequences of whitespace will collapse into a single whitespace. 
+            Text will never wrap to the next line. The text continues on the same line until a &lt;br&gt; tag is encountered.</p>
+        <h3>Pre</h3>
+        <p class="w-pre">Whitespace is preserved by the browser. Text will only wrap on line breaks. Acts like the &lt;pre&gt; tag in HTML.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Beatae eveniet esse, quo consequatur nulla illo quia accusantium cupiditate earum minus?</p>
+        <h3>Pre-Line</h3>
+        <p class="w-preline">Sequences of whitespace will collapse into a single whitespace. Text will wrap when necessary, and on line breaks.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus eligendi quas aut facere quibusdam error aliquam ad et in.
+        </p>
+        <h3>Pre-Wrap</h3>
+        <p class="w-prewrap">Whitespace is preserved by the browser. Text will wrap when necessary, and on line breaks.
+
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non est aspernatur ut vero, hic dicta commodi illo ea sed, exercitationem laboriosam necessitatibus consequatur! Labore veritatis voluptatum amet, non iusto laudantium?
+        </p>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Text-Shadow</h2>
+        <p><b>Note:</b> To add more than one shadow to the text, add a comma-separated list of shadows.</p>
+        <h3>None (std)</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, molestias.</p>
+        <h3><i>h-shadow v-shadow blur-radius color</i></h3>
+        <h4>One Shadow</h4>
+        <p class="shadow1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, ipsum.</p>
+        <h4>Three Shadows</h4>
+        <p class="shadow2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, similique.</p>
+    </div>
+</body>
+</html>
