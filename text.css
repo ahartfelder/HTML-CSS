@@ -109,6 +109,10 @@ p[class|="last"] {
     text-decoration: line-through;
 }
 
+.all {
+    text-decoration: line-through overline underline;    
+}
+
 .upper {
     text-transform: uppercase;
 }
